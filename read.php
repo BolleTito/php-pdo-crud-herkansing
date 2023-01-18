@@ -1,7 +1,5 @@
 <?php
-/**
- * Maak een verbinding met de mysqlserver en database
- */
+
 include('config.php');
 
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
@@ -9,7 +7,7 @@ $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 try {
     $pdo = new PDO($dsn, $dbUser, $dbPass);
     if ($pdo) {
-        // echo "Er is een verbinding met de mysql server";
+        echo "Er is een verbinding met de mysql server";
     } else {
         echo "Er is een interne server error opgetreden"; 
     }
@@ -17,9 +15,7 @@ try {
     echo $e->getMessage();
 }
 
-/**
- * Maak een select query om de gegevens uit de tabel Persoon te halen
- */
+
 
 $sql = "SELECT Id
               ,NaamAchtbaan
