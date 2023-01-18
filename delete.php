@@ -19,7 +19,7 @@ try {
 }
 
 // Maak een sql query die het record gaat verwijderen uit de database
-$sql = "DELETE FROM 
+$sql = "DELETE FROM Achtbaan 
     WHERE Id = :Id;";
 
 //preparer de querey zodat we da waarde van id kunnen kopellen aan de placehoder :Id
