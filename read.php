@@ -46,7 +46,7 @@ foreach($result as $info) {
                         <td>$info->Hoogte</td>
                         <td>
                             <a href='delete.php'>
-                                <img src='img/b_drop.png' alt='cross'>
+                                <img src='b_drop.png' alt='cross'>
                             </a>
                         </td>
                    </tr>";
