@@ -56,10 +56,11 @@ foreach($result as $info) {
 
 <table border='1'>
     <thead>
-        <th>Voornaam</th>
-        <th>Tussenvoegsel</th>
-        <th>Achternaam</th>
-        <th></th>
+        <th>NaamAchtbaan</th>
+        <th>NaamPretpark</th>
+        <th>Land</th>
+        <th>Topsnelheid</th>
+        <th>Hoogte</th>
     </thead>
     <tbody>
         <?php echo $tableRows; ?>
