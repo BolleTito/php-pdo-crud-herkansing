@@ -39,9 +39,11 @@ $tableRows = "";
 
 foreach($result as $info) {
     $tableRows .= "<tr>
-                        <td>$info->Voornaam</td>
-                        <td>$info->Tussenvoegsel</td>
-                        <td>$info->Achternaam</td>
+                        <td>$info->NaamAchtbaan</td>
+                        <td>$info->NaamPretpark</td>
+                        <td>$info->Land</td>
+                        <td>$info->Topsnelheid</td>
+                        <td>$info->Hoogte</td>
                         <td>
                             <a href='delete.php'>
                                 <img src='img/b_drop.png' alt='cross'>
