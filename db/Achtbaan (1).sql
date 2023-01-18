@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 18 jan 2023 om 13:16
+-- Gegenereerd op: 18 jan 2023 om 15:11
 -- Serverversie: 5.7.36
 -- PHP-versie: 8.1.0
 
@@ -29,24 +29,25 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `Achtbaan`;
 CREATE TABLE IF NOT EXISTS `Achtbaan` (
-  `Id` int(4) UNSIGNED NOT NULL COMMENT 'Primary Key',
+  `Id` int(4) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
   `NaamAchtbaan` varchar(255) NOT NULL,
   `NaamPretpark` varchar(255) NOT NULL,
   `Land` varchar(255) NOT NULL,
   `Topsnelheid` int(4) UNSIGNED NOT NULL,
-  `Hoogte` int(4) UNSIGNED NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `Hoogte` int(4) UNSIGNED NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=123 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `Achtbaan`
 --
 
 INSERT INTO `Achtbaan` (`Id`, `NaamAchtbaan`, `NaamPretpark`, `Land`, `Topsnelheid`, `Hoogte`) VALUES
-(1, 'Red Force', 'Ferrari Land', 'Spanje', 192, 112),
-(2, 'Ring Racer', 'Circuit Nürnberg', 'Duitsland', 160, 110),
+(5, 'Shambala', 'PortAventura', 'Spanje', 134, 102),
 (3, 'Hyperion', 'EnergyLandia', 'Polen', 141, 77),
+(2, 'Ring Racer', 'Race circuit Nürnberg', 'Duitsland', 160, 110),
 (4, 'Furios Baco', 'PortAventura', 'Spanje', 138, 23),
-(5, 'Shambala', 'PortAventura', 'Spanje', 134, 102);
+(1, 'Red Force', 'Ferrari land', 'Spanje', 192, 112);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
