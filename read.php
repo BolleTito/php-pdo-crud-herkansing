@@ -63,6 +63,7 @@ foreach($result as $info) {
         <th>Land</th>
         <th>Topsnelheid</th>
         <th>Hoogte</th>
+        <th>Verwijderen</th>
     </thead>
     <tbody>
         <?php echo $tableRows; ?>
