@@ -22,10 +22,12 @@ try {
  */
 
 $sql = "SELECT Id
-              ,Voornaam
-              ,Tussenvoegsel
-              ,Achternaam
-        FROM Persoon";
+              ,NaamAchtbaan
+              ,NaamPretpark
+              ,Land
+              ,Topsnelheid
+              ,Hoogte
+        FROM Achtbaan";
 
 //Bereid de de query voor met de method prepare
 $statement = $pdo->prepare($sql);
